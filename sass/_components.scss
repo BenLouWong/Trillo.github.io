@@ -1,0 +1,92 @@
+// ------------------- logo --------------//
+.logo{
+    height: 3.25rem;
+    margin-left: 3rem;
+}
+
+// ------------------- search --------------//
+.search{
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_input{ //input elements do not automatically inherit font properites, needs to be manually input
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        margin-right: -3.25rem;
+        background-color: var(--colour-grey-light-2);
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all 0.3s ease;
+
+        &:focus{ //The :focus CSS pseudo-class represents an element (such as a form input) that has received focus. It is generally triggered when the user clicks or taps on an element or selects it with the keyboard's Tab key. -- https://developer.mozilla.org/en-US/docs/Web/CSS/:focus
+            outline: none;
+            width: 100%;
+            background-color: var(--colour-grey-light-3);
+        }
+
+        &::-webkit-input-placeholder{
+            font-weight: 100;
+            color: var(--colour-grey-light-3);
+        }
+    }
+
+    &_input:focus + &_button{
+        background-color: var(--colour-grey-light-3);
+    }
+
+    &_button{
+        border: none;
+        background-color: var(--colour-grey-light-2);
+
+        &:focus{
+            outline: none;
+        }
+
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+
+    &_icon{
+        height: 2rem;
+        width: 2rem;
+        fill: var(--colour-grey-dark-3);
+    }
+}
+
+// ------------------- user navigation --------------//
+.user-nav{
+    background-color: gold;
+    &_icon-box{
+
+    }
+
+    &_icon{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+
+    &_notification{
+
+    }
+
+    &_user{
+        height: 3.75rem;
+        width: 3.75rem;
+    }
+
+    &_user-photo{
+        height: 3.75rem;
+        border-radius: 50%;
+    }
+
+    &_user-name{
+
+    }
+
+}
