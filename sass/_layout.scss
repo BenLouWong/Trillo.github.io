@@ -9,7 +9,7 @@
     height: 7rem;
     font-size: 1.4rem;
     background-color: white;
-    border-bottom: var(--colour-grey-light-2);
+    border-bottom: var(--line);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,9 +22,35 @@
 .sidebar{
     background-color: var(--colour-grey-dark-1);
     flex: 0 0 20%; //flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotel-view{
-    background-color: aqua;
     flex: 1;
+}
+
+.detail{
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--colour-grey-light-2);
+    border-bottom: var(--line);
+    font-size: 1.4rem;
+}
+
+.description{
+    font-size: 1.4rem;
+    background-color: white;
+    box-shadow:var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+}
+
+.user-reviews{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
